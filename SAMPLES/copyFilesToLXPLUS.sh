@@ -49,7 +49,7 @@ copy () {
         # loop over directories in the source
         for filepath in $(xrdfs $SOURCEMGM ls ${SOURCELFN}/${dir}) ; do
             # copy the files
-            echo "Will copy ALL files from the directory ${dir}"
+            echo "Will copy the file at ${filedir}"
             xrdcp ${SOURCEMGM}/${filepath} ${TARGETMGM}/${TARGETLFN}/${dir}/
         done 
     done
